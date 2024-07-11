@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Listing</title>
+    <link rel="stylesheet" href="amazon.css">
+</head>
+<body>
+    <header>
+        <h1>Product Listing</h1>
+    </header>
+    <div class="container">
+        <div class="filters">
+            <h2>Filters</h2>
+            <div class="filter-group">
+                <label for="category">Category:</label>
+                <select id="category">
+                    <option value="all">All</option>
+                    <option value="electronics">Electronics</option>
+                    <option value="fashion">Fashion</option>
+                    <option value="home">Sports</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label for="price">Price Range:</label>
+                <input type="range" id="price" name="price" min="0" max="1000" oninput="updatePriceValue(this.value)">
+                <span id="price-value">0 - 1000</span>
+            </div>
+        </div>
+        <div class="product-list">
+            <div class="product-card">
+                <img src="/laptop.jpeg" alt="Product Image">
+                <h3>Product 1</h3>
+                <p>$100</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="/shirt.jpeg" alt="Product Image">
+                <h3>Product 2</h3>
+                <p>$200</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="/football.jpeg" alt="Product Image">
+                <h3>Product 3</h3>
+                <p>$300</p>
+                <button>Add to Cart</button>
+            </div>
+            <!-- More product cards -->
+        </div>
+    </div>
+
+</body>
+</html>
